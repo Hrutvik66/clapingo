@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 // React Router DOM
 import { useNavigate } from "react-router-dom";
 
+// Toastofy
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Login = () => {
   // Navigate
   const navigate = useNavigate();
@@ -11,6 +15,15 @@ const Login = () => {
     password: "",
   });
   const Login = () => {
+    if (data.userName === "" || data.password === "") {
+      toast.error("Please fill all the fields", {
+        position: "top-center",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+      });
+      return;
+    }
     localStorage.setItem("Credencials", JSON.stringify(data));
     if (localStorage.getItem("Credencials")) {
       navigate("/Loggedin");
@@ -32,7 +45,7 @@ const Login = () => {
               type="text"
               placeholder="Enter Username"
               name="userName"
-              className="w-[90%] border-[1px] p-3 rounded-lg"
+              className="w-[90%] border-[1px] p-3 rounded-lg outline-[#52A49A]"
               value={data.userName}
               onChange={(e) => setData({ ...data, userName: e.target.value })}
             />
@@ -40,12 +53,12 @@ const Login = () => {
               type="password"
               placeholder="Enter Password"
               name="password"
-              className="w-[90%] border-[1px] p-3 rounded-lg"
+              className="w-[90%] border-[1px] p-3 rounded-lg outline-[#52A49A]"
               value={data.password}
               onChange={(e) => setData({ ...data, password: e.target.value })}
             />
             <button
-              className="items-center bg-gradient-to-t from-[#52A49A] to-[#00CDAC] text-lg text-white p-[0.7rem_1.5rem] rounded-full w-[50%]"
+              className="items-center bg-gradient-to-t from-[#52A49A] to-[#00CDAC] text-lg text-white p-[0.7rem_1.5rem] rounded-full w-[50%] hover:shadow-lg transition-all duration-700 ease-in-out"
               onClick={Login}
             >
               Login
@@ -58,6 +71,7 @@ const Login = () => {
           className="flex-1 h-[40rem] w-[15rem]"
         />
       </div>
+      <ToastContainer/>
     </div>
   );
 };

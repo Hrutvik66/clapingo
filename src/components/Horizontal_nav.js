@@ -18,7 +18,7 @@ const Horizontal_nav = () => {
       <div className="flex space-x-8 items-center">
         {Navbar_data().map((item) => {
           return (
-            <p className="text-[1.2rem] font-medium" key={item.item}>
+            <p className="text-[1.2rem] font-medium cursor-pointer" key={item.item}>
               {item.item}
             </p>
           );
@@ -26,7 +26,7 @@ const Horizontal_nav = () => {
       </div>
       {/* Login Button */}
       <Link to="/Login">
-        <button className="flex items-center bg-gradient-to-t from-[#52A49A] to-[#00CDAC] text-lg text-white p-[0.5rem_1.5rem] rounded-full space-x-2">
+        <button className="flex items-center bg-gradient-to-t from-[#52A49A] to-[#00CDAC] text-lg text-white p-[0.5rem_1.5rem] rounded-full space-x-2 hover:shadow-lg shadow-green-600 transition-all duration-700 ease-in-out">
           <TiUser className="h-6 w-6" />
           <span className="font-medium">Login</span>
         </button>

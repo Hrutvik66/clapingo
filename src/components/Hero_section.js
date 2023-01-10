@@ -15,8 +15,8 @@ const Hero_section = () => {
         </h4>
         {/* Buttons */}
         <div className="flex space-x-[3rem]">
-          <button className="bg-[#FF736A] text-white font-medium p-[1rem_1rem] rounded-full w-[10rem]">Book a trial</button>
-          <button className="text-[#FF736A] border-[2.5px] border-[#FF736A] font-medium p-[0.8rem_1rem] rounded-full w-[15rem]">Download our app</button>
+          <button className="bg-[#FF736A] text-white font-medium p-[0.8rem_1rem] rounded-full w-[10rem] hover:bg-white hover:text-black hover:border-[2.5px] border-[#FF736A] transition-all duration-700 ease-in-out">Book a trial</button>
+          <button className="text-[#FF736A] border-[2.5px] border-[#FF736A] font-medium p-[0.8rem_1rem] rounded-full w-[12rem] hover:bg-[#FF736A] hover:text-white transition-all duration-700 ease-in-out">Download our app</button>
         </div>
       </div>
       {/* Right section */}

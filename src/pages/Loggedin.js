@@ -24,7 +24,7 @@ const Loggedin = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen space-y-10">
       <h2>
-        Hey <span>{user.userName}</span>, You Loggedin Successfully 🎉
+        Hey <span>{user.userName}</span>, You Logged in Successfully 🎉
       </h2>
       <button
         className="items-center bg-gradient-to-t from-[#52A49A] to-[#00CDAC] text-lg text-white p-[0.7rem_1.5rem] rounded-full w-[10rem]"

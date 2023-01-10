@@ -34,7 +34,7 @@ const Statastic_section = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque
           pellentesque praesent vitae sit sagittis venenatis.
         </p>
-        <button className="bg-[#FF736A] text-white font-medium p-[0.7rem_1rem] rounded-full w-[9rem]">Book a trial</button>
+        <button className="bg-[#FF736A] text-white font-medium p-[1rem_1rem] rounded-full w-[10rem] hover:bg-white hover:text-black hover:border-[2.5px] border-[#FF736A] transition-all duration-700 ease-in-out">Book a trial</button>
       </div>
     </div>
   );
