@@ -11,14 +11,14 @@ import { Link } from "react-router-dom";
 
 const Horizontal_nav = () => {
   return (
-    <div className="flex items-center justify-between p-[1rem_7rem] bg-white z-50 fixed w-full top-0 border-b-2 shadow-sm">
+    <div className="flex items-center justify-between p-[0.6rem_7rem] bg-white z-50 fixed w-full top-0 border-b-2 shadow-sm">
       {/* Logo */}
       <img src={process.env.PUBLIC_URL + "/images/Logo.svg"} alt="logo" />
       {/* Navbar Items */}
       <div className="flex space-x-8 items-center">
         {Navbar_data().map((item) => {
           return (
-            <p className="text-[1.2rem] font-medium cursor-pointer" key={item.item}>
+            <p className="text-[1rem] font-medium cursor-pointer" key={item.item}>
               {item.item}
             </p>
           );

@@ -26,7 +26,7 @@ const Work = () => {
           <img
             src={process.env.PUBLIC_URL + "/images/Subscribe & plans 1.png"}
             alt="Subscribe page"
-            className="h-[28rem] w-[15rem]"
+            className="h-[25rem] w-[15rem]"
           />
           <div className="bg-gradient-to-b from-[#ffffff7b] to-[#fff] h-[8rem] w-[15rem] relative -top-[8rem]"></div>
         </div>
