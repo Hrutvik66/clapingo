@@ -26,7 +26,7 @@ const Horizontal_nav = () => {
       </div>
       {/* Login Button */}
       <Link to="/Login">
-        <button className="flex items-center bg-gradient-to-t from-[#52A49A] to-[#00CDAC] text-lg text-white p-[0.7rem_1.5rem] rounded-full space-x-2">
+        <button className="flex items-center bg-gradient-to-t from-[#52A49A] to-[#00CDAC] text-lg text-white p-[0.5rem_1.5rem] rounded-full space-x-2">
           <TiUser className="h-6 w-6" />
           <span className="font-medium">Login</span>
         </button>
